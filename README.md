@@ -44,10 +44,10 @@ The configuration details of each machine may be found below.
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jump Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- 142.112.0.0/12
+   142.112.0.0/12
 
 Machines within the network can only be accessed by SSH.
- The only machines with access to the ELK VM is the JumpBox (10.0.1.7) or externally through Port 5601 (142.112.0.0/12) 
+ The only machines with access to the ELK VM are the JumpBox (10.0.1.7) or externally through HTTP Port 5601 (142.112.0.0/12) 
 
 A summary of the access policies in place can be found in the table below.
 
@@ -73,14 +73,14 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+As of Jan032021 a I am unable to update github to create this path and copy it: ![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+- 10.0.1.6 10.0.1.5
 
-We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+I have installed the following Beats on these machines:
+- Filebeat and Metricbeat
 
 These Beats allow us to collect the following information from each machine:
 - _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._

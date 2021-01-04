@@ -88,7 +88,8 @@ Metricbeat views stats and status of any/all servers and sends all the raw data 
 transformations on the data at a later time which saves on storage and makes it easier to view other values when one of the metrics for a service seems off.
 
 
-`Filebeat` collects slow logs for example, which we use to track slow query or index requests and help verify system health. 'Metricbeat' can be used to detect a problem with some infrastructure or show a spike denoting
+`Filebeat` collects slow logs for example, which we use to track slow query or index requests and help verify system health. 
+'Metricbeat' can be used to detect a problem with some infrastructure or show a spike denoting
 a DDoS attack. Machine learning can be enabled to view anomalies across log partitions.
 
 ### Using the Playbook
@@ -105,7 +106,7 @@ You will need to configure your Azure peer networks to ensure security of your r
 
 RESOURCES:
 Go here for help resources: 
-elk-docker Container Documentation: https://elk-docker.readthedocs.io/
-elk-docker Image Documentation: https://elk-docker.readthedocs.io/#elasticsearch-logstash-kibana-elk-docker-image-documentation
-Elastic.co: The Elastic Stack: https://www.elastic.co/elastic-stack
+ - elk-docker Container Documentation: https://elk-docker.readthedocs.io/
+ - elk-docker Image Documentation: https://elk-docker.readthedocs.io/#elasticsearch-logstash-kibana-elk-docker-image-documentation
+ - Elastic.co: The Elastic Stack: https://www.elastic.co/elastic-stack
 
